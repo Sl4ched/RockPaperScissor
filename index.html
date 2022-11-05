@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+
+    <head>
+        <title>Rock Paper Scissor</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Omer Bircan Sahin">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="background-color:black">
+
+        <wrapper class="center">
+        
+            <div id="animationScreen" class="center">
+
+                <div class="fix"> 
+                    <img style="visibility:hidden" id="animationsRock"src="rock.png" alt="rock"></img>
+                    <img style="visibility:hidden" id="animationsPaper"src="paper.jpg" alt="paper"></img>
+                    <img style="visibility:hidden" id="animationsScissor"src="scissor.jpg" alt="scissor"></img>
+                </div>
+
+                <div class="fix">
+                    <img id="vs" src="vs.jpg" alt="vs"></img>
+                </div> 
+
+                <div class="fix"> 
+                    <img style="visibility:hidden" id="animationsRockComp"src="rock.png" alt="rockComp"></img>
+                    <img style="visibility:hidden" id="animationsPaperComp"src="paper.jpg" alt="paperComp"></img>
+                    <img style="visibility:hidden" id="animationsScissorComp"src="scissor.jpg" alt="scissorComp"></img>
+                </div>
+
+            </div>
+
+            <div id="background">
+
+                <div id="txAnswer">Your Answer:</div>
+                <div id="txComputer">Computer Answer:</div>
+                <div id="txWinner">Winner:</div>
+
+                <div id="buttons" class="center">
+                    <button id="btRock">Rock</button>
+                    <button id="btPaper">Paper</button>
+                    <button id="btScissor">Scissor</button>
+                </div>
+                
+                
+            </div>
+
+        </wrapper>
+
+
+        <script src="index.js"></script>
+
+    </body>
+
+
+</html>

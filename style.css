@@ -1,0 +1,230 @@
+.center {
+    display: flex;
+
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#background {
+    
+    height: 580px;
+    width: 660px;
+    background-color: black;
+    border: 15px solid red;
+    box-shadow: 20px 20px 50px red;
+    border-radius: 25px;
+
+}
+
+#btRock {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    font-family: monospace;
+    background-color: darkslateblue;
+    border: 5px solid skyblue;
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px skyblue;
+    position: relative;
+    margin: 10px;
+
+
+}
+
+#btScissor {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    font-family: monospace;
+    background-color:gold;
+    border: 5px solid red;
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px gold;
+    position: relative;
+    margin: 10px;
+
+}
+
+#btPaper {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    font-family: monospace;
+    background-color: whitesmoke;
+    border: 5px dashed black;
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px whitesmoke;
+    position: relative;
+    margin: 10px;
+
+
+}
+
+#txAnswer {
+
+    font-size: 40px;
+    margin: 10% 10% 20px 10%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
+    text-shadow: 3px 3px 20px green;
+    position: relative;
+    
+}
+
+#txComputer {
+
+
+    margin: 10% 10% 20px 10%;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+    text-shadow: 3px 3px 40px red;
+    position: relative;
+   
+}
+
+#txWinner {
+
+    margin: 10% 10% 0 10%;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: yellow;
+    text-shadow: 3px 3px 40px yellow;
+    position: relative;
+  
+}
+
+#animationScreen {
+
+
+    height: 100px;
+    width: 500px;
+    margin: 5%;
+
+    background-color: cornsilk;
+
+    border: 10px solid red;
+    box-shadow: 10px 10px 50px red; 
+    border-radius: 25px;
+
+}
+
+#buttons {
+    
+
+    margin-top: 15%;
+    margin-bottom:15%;
+    height: 100px;
+  
+
+}
+
+.fix {
+
+    display: flex;
+    width: 100vh;
+
+}
+
+#vs {
+
+    width: 100px;
+    border:3px solid red;
+    box-shadow: 10px 10px 25px orange;
+    border-radius: 25px;
+
+}
+
+#animationsPaper {
+
+    visibility: visible;
+    display: inline;
+
+    position:relative;
+
+    width:80px;
+    border: 2px solid black;
+    border-radius: 25px;
+
+}
+
+#animationsRock {
+
+    visibility: visible;
+
+    position:relative;
+    left: 82px;
+
+    width:80px;
+    border: 2px solid black;
+    border-radius: 25px;
+
+}
+
+#animationsScissor {
+
+    visibility: visible;
+
+    position:relative;
+    right: 82px;
+
+    width:80px;
+    border: 2px solid black;
+    border-radius: 25px;
+
+}
+
+#animationsPaperComp {
+
+    visibility: visible;
+
+    position:relative;   
+
+    width:80px;
+    border: 2px solid black;
+    border-radius: 25px;
+
+}
+
+#animationsRockComp {
+
+    visibility: visible;
+
+    position:relative;
+    left: 82px;
+
+    width:80px;
+    border: 2px solid black;
+    border-radius: 25px;
+
+}
+
+#animationsScissorComp {
+
+    visibility: visible;
+
+    position:relative;
+    right: 82px;
+
+    width:80px;
+    border: 2px solid black;
+    border-radius: 25px;
+
+}
