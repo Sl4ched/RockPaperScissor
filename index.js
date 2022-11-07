@@ -37,7 +37,7 @@ btRock.addEventListener("click", () => {//button of rock
     
         showImage(imgRock);   
         
-        delayAnimation = setInterval(igniteAnimation,1,imgRock);
+        delayAnimation = setInterval(igniteAnimation,5,imgRock);
 
         //All buttons are being disable during game time
         btDisable();
@@ -60,7 +60,7 @@ btPaper.addEventListener("click", () => {//button of paper
 
         showImage(imgPaper);
 
-        delayAnimation = setInterval(igniteAnimation,1,imgPaper);
+        delayAnimation = setInterval(igniteAnimation,5,imgPaper);
 
         //All buttons are being disable during game time
         btDisable();
@@ -83,7 +83,7 @@ btPaper.addEventListener("click", () => {//button of paper
 
         showImage(imgScissor);
 
-        delayAnimation = setInterval(igniteAnimation,1,imgScissor);
+        delayAnimation = setInterval(igniteAnimation,5,imgScissor);
 
         //All buttons are being disable during game time
         btDisable();
@@ -255,7 +255,7 @@ function igniteAnimation(element){//rotate animation for first element
 
     element.style.transform = `rotateZ(${degree1}deg)`
 
-    if(degree1 <= 722) degree1+=2;
+    if(degree1 <= 722) degree1+=3;
 
     if (degree1 >= 722) {
     degree1=0;
