@@ -14,8 +14,9 @@ const vs = document.querySelector("#vs");
 
 let addition = 82;
 
-let delayTheAnswer = 12000;
-let delayForGetClose = 4000;
+let delayTheAnswer = 7000;
+let delayForGetClose = 2500;
+let delayForSecondElementShow = 2000;
 
 let computerChoose;
 let playerChoose;
@@ -115,41 +116,41 @@ function createRandomAnswer(element){//creating random case
 
         if(computerChoose == "Rock") {
             showImage(imgRockForComputer);
-            delayAnimationForComputer = setInterval(igniteAnimationForComputer,1,imgRockForComputer);
+            delayAnimationForComputer = setInterval(igniteAnimationForComputer,5,imgRockForComputer);
 
             setTimeout(() =>  {//ignite fight
 
                 vs.style = "visibility:hidden";
-                delayFight = setInterval(fight,1,element,imgRockForComputer);
+                delayFight = setInterval(fight,5,element,imgRockForComputer);
 
             },delayForGetClose);
         }
         if(computerChoose == "Paper") {
             showImage(imgPaperForComputer);
-            delayAnimationForComputer = setInterval(igniteAnimationForComputer,1,imgPaperForComputer);
+            delayAnimationForComputer = setInterval(igniteAnimationForComputer,5,imgPaperForComputer);
 
             setTimeout(() =>  {//ignite fight
 
                 vs.style = "visibility:hidden";
-                delayFight = setInterval(fight,1,element,imgPaperForComputer);
+                delayFight = setInterval(fight,5,element,imgPaperForComputer);
 
             },delayForGetClose);
 
         }
         if(computerChoose == "Scissor") {
             showImage(imgScissorForComputer);
-            delayAnimationForComputer = setInterval(igniteAnimationForComputer,1,imgScissorForComputer);
+            delayAnimationForComputer = setInterval(igniteAnimationForComputer,5,imgScissorForComputer);
 
             setTimeout(() =>  {//ignite fight
 
                 vs.style = "visibility:hidden";
-                delayFight = setInterval(fight,1,element,imgScissorForComputer);
+                delayFight = setInterval(fight,5,element,imgScissorForComputer);
 
             },delayForGetClose);
         }
 
 
-    },3000);
+    },delayForSecondElementShow);
 }
 
 function checkWhoWin(){//this is check for who win
@@ -254,9 +255,9 @@ function igniteAnimation(element){//rotate animation for first element
 
     element.style.transform = `rotateZ(${degree1}deg)`
 
-    if(degree1 <= 720) degree1++;
+    if(degree1 <= 722) degree1+=2;
 
-    if (degree1 >= 720) {
+    if (degree1 >= 722) {
     degree1=0;
     clearInterval(delayAnimation);
     }
@@ -267,9 +268,9 @@ function igniteAnimationForComputer(element){//rotate animation for second eleme
 
     element.style.transform = `rotateZ(${-degree2}deg)`
 
-    if(degree2 <= 720) degree2++;
+    if(degree2 <= 722) degree2+=3;
 
-    if (degree2 >= 720) {
+    if (degree2 >= 722) {
         degree2=0;
         clearInterval(delayAnimationForComputer);
         }
@@ -281,7 +282,7 @@ function fight(player,computer){//figting animate
 
     if(winner == "Tie"){ //if its tie
 
-        if(getCloseForTie <= 137) getCloseForTie++;
+        if(getCloseForTie <= 137) getCloseForTie+=2;
 
         if(computerChoose == "Paper" && playerChoose == "Paper"){
             addition = 0;
@@ -310,7 +311,7 @@ function fight(player,computer){//figting animate
 
     }else{//if there is a winner
 
-        if(getCloseForWin <= 350) getCloseForWin++;
+        if(getCloseForWin <= 350) getCloseForWin+=2;
 
         switch(playerChoose){
 
@@ -395,8 +396,8 @@ function fight(player,computer){//figting animate
 
     }
 
-    if(degree3 <= 720) degree3++;
-    if(degree3 >= 720) {
+    if(degree3 <= 362) degree3+=2;
+    if(degree3 >= 362) {
         degree3 = 0;
         getCloseForTie = 0;
         getCloseForWin = 0;
